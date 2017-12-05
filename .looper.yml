@@ -2,25 +2,10 @@ tools:
   jdk: 8
   maven: 3.5.0
   
-envs:
-  global:
-    variables:
-      oneops.organization: devtools
-      oneops.assembly: hello-world-webapp
-      oneops.environment: qa
-      platform: hello-world-webapp
+
 
 triggers:
   - manual: Run default
-  - manual:
-      name: Release Build
-      call: release
-  - manual:
-      name: Snapshot Deployment
-      call: snapshotDeploy
-  - manual:
-      name: Release Deployment
-      call: releaseDeploy
 flows:
   default:
     - call: versionsCheck
