@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <modelVersion>4.0.0</modelVersion>
+
+ <groupId>com.walmart.strati.sde</groupId>
+ <artifactId>maven-validation</artifactId>
+ <version>3.0.0-SNAPSHOT</version>
+
+ <packaging>jar</packaging>
+
+ <properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+ </properties>
+
+ <distributionManagement>
+  <repository>
+   <id>pangaea_releases</id>
+   <url>https://repository.walmart.com/content/repositories/pangaea_releases</url>
+  </repository>
+  <snapshotRepository>
+   <id>pangaea_snapshots</id>
+   <url>https://repository.walmart.com/content/repositories/pangaea_snapshots</url>
+  </snapshotRepository>
+ </distributionManagement>
+
+ <scm>
+  <connection>scm:git:https://gecgithub01.walmart.com/devtools-testing/maven_validation.git</connection>
+  <developerConnection>scm:git:https://gecgithub01.walmart.com/devtools-testing/maven_validation.git</developerConnection>
+  <url>https://gecgithub01.walmart.com/devtools-testing/maven_validation</url>
+  <tag>maven-validation-1.0.2</tag>
+ </scm>
+
+ <dependencies>
+  <dependency>
+   <groupId>junit</groupId>
+   <artifactId>junit</artifactId>
+   <version>4.12</version>
+   <scope>test</scope>
+  </dependency>
+  <dependency>
+   <groupId>org.apache.commons</groupId>
+   <artifactId>commons-lang3</artifactId>
+   <version>3.6</version>
+  </dependency>
+ </dependencies>
+
+ <build>
+  <pluginManagement>
+   <plugins>
+    <plugin>
+     <groupId>org.apache.maven.plugins</groupId>
+     <artifactId>maven-release-plugin</artifactId>
+     <version>2.5.3</version>
+     <configuration>
+      <localCheckout>true</localCheckout> <!-- must be true -->
+     </configuration>
+    </plugin>
+   </plugins>
+  </pluginManagement>
+ </build>
+</project>
