@@ -15,19 +15,19 @@
 
  <distributionManagement>
   <repository>
-   <id>pangaea_releases</id>
-   <url>https://repository.walmart.com/content/repositories/pangaea_releases</url>
+   <id>libs-release-local</id>
+   <url>http://localhost:8082/artifactory/libs-release-local</url>
   </repository>
   <snapshotRepository>
-   <id>pangaea_snapshots</id>
-   <url>https://repository.walmart.com/content/repositories/pangaea_snapshots</url>
+   <id>mock-maven-dev-local</id>
+   <url>http://localhost:8082/artifactory/mock-maven-dev-local</url>
   </snapshotRepository>
  </distributionManagement>
 
  <scm>
-  <connection>scm:git:https://gecgithub01.walmart.com/devtools-testing/maven_validation.git</connection>
-  <developerConnection>scm:git:https://gecgithub01.walmart.com/devtools-testing/maven_validation.git</developerConnection>
-  <url>https://gecgithub01.walmart.com/devtools-testing/maven_validation</url>
+  <connection>scm:git:https://github.com/arangas27/LooperMvnTest.git</connection>
+  <developerConnection>scm:git:https://github.com/arangas27/LooperMvnTest.git</developerConnection>
+  <url>https://github.com/arangas27/LooperMvnTest.git</url>
   <tag>maven-validation-1.0.2</tag>
  </scm>
 
